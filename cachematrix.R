@@ -1,14 +1,13 @@
 ## Put comments here that give an overall description of what your
 ## functions do
-## set: sets the data in this case a matrix for which inverse has to be calculated
-## get: retrieves the data, in this case the matrix for which inverse has 
+## set: sets the matrix for which inverse has to be calculated
+## get: retrieves the matrix for which inverse has 
 ##      to be calculated
 ## setinv: stores the inverse of the matrix in cache
 ## getinv: retrieves the inverse of the matrix which is stored in cache
 
 ## Write a short comment describing this function
-## initializes a set of internal functions associated with the data 
-## in this case the matrix
+## Returns a list of function closure associated with a matrix 
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
